@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi kantor-yt</title>
+  <meta name="description" content="Kebijakan privasi kantor-yt, alat unggah YouTube untuk channel Top Hot.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand"><a href="index.html">kantor-yt</a></div>
+    <h1>Kebijakan Privasi</h1>
+    <p class="meta">Berlaku sejak 25 November 2026 · <a href="#english">English version below</a></p>
+  </header>
+
+  <p>kantor-yt adalah alat pribadi milik pengelola channel YouTube Top Hot (@Topphott). Alat ini berjalan
+    di komputer pengguna dan memakai YouTube API Services untuk mengunggah video ke channel pengguna sendiri.
+    Dengan memakai kantor-yt, Anda menyetujui
+    <a href="https://www.youtube.com/t/terms">Persyaratan Layanan YouTube</a>. Data yang diproses Google
+    tunduk pada <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a>.</p>
+
+  <h2>Data yang diakses</h2>
+  <p>Saat Anda login dengan Google, kantor-yt meminta dua izin:</p>
+  <ul>
+    <li><code>youtube.upload</code>: untuk mengunggah video yang Anda pilih dan memasang thumbnail-nya.</li>
+    <li><code>youtube.readonly</code>: untuk membaca nama, handle, dan ID channel Anda, serta status video
+      yang diunggah (status proses, privasi, jadwal tayang, durasi).</li>
+  </ul>
+  <p>kantor-yt tidak membaca email, kontak, file Google Drive, riwayat tontonan, komentar, atau data lain.</p>
+
+  <h2>Cara data dipakai</h2>
+  <p>Data hanya dipakai untuk menjalankan perintah yang Anda berikan: mengunggah video, memasang thumbnail,
+    memastikan unggahan masuk ke channel yang benar, dan menampilkan status video. Data tidak dipakai untuk
+    iklan, analitik, pelatihan model AI, atau tujuan lain.</p>
+
+  <h2>Penyimpanan</h2>
+  <ul>
+    <li>Token login Google disimpan <strong>hanya di komputer Anda</strong>, di
+      <code>~/.kantor-yt/token.json</code>, dengan izin file yang hanya bisa dibaca pemilik akun komputer.</li>
+    <li>Catatan unggahan (ID video, judul, nama file, waktu unggah, jadwal yang diminta) disimpan di
+      <code>~/.kantor-yt/uploads.jsonl</code> di komputer Anda, untuk mencegah unggahan ganda dan memeriksa status.</li>
+    <li>kantor-yt tidak punya server. Tidak ada data yang dikirim ke pihak mana pun selain Google/YouTube
+      melalui API resmi mereka.</li>
+  </ul>
+
+  <h2>Berbagi data</h2>
+  <p>kantor-yt tidak menjual, menyewakan, atau membagikan data Anda kepada pihak ketiga.</p>
+
+  <h2>Kepatuhan Google API Services</h2>
+  <p>Penggunaan dan pemindahan informasi yang diterima dari Google API oleh kantor-yt mematuhi
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+    Policy</a>, termasuk persyaratan Limited Use.</p>
+
+  <h2>Mencabut akses dan menghapus data</h2>
+  <ul>
+    <li>Cabut akses kantor-yt kapan saja di halaman keamanan akun Google:
+      <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>,
+      atau jalankan <code>yt logout --revoke</code>.</li>
+    <li>Hapus semua data lokal dengan menghapus folder <code>~/.kantor-yt</code> di komputer Anda.</li>
+    <li>Video yang sudah diunggah ada di YouTube dan dikelola lewat YouTube Studio.</li>
+  </ul>
+
+  <h2>Perubahan</h2>
+  <p>Kebijakan ini dapat diperbarui. Tanggal berlaku di atas akan diubah setiap kali ada perubahan.</p>
+
+  <h2>Kontak</h2>
+  <p>Pertanyaan tentang kebijakan ini: <a href="mailto:memet02nrs@gmail.com">memet02nrs@gmail.com</a></p>
+
+  <hr>
+
+  <section id="english">
+    <div class="brand">English</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective 25 November 2026</p>
+
+    <p>kantor-yt is a private tool operated by the manager of the YouTube channel Top Hot (@Topphott). It runs
+      on the user's own computer and uses YouTube API Services to upload videos to the user's own channel.
+      By using kantor-yt you agree to be bound by the
+      <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Data processed by Google is subject
+      to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+    <h3>Data accessed</h3>
+    <p>With your Google sign-in, kantor-yt requests <code>youtube.upload</code> (to upload the videos you choose
+      and set their thumbnails) and <code>youtube.readonly</code> (to read your channel's name, handle and ID, and
+      the processing status, privacy status, scheduled publish time and duration of uploaded videos). It does not
+      access email, contacts, Drive files, watch history, comments or any other data.</p>
+
+    <h3>How data is used</h3>
+    <p>Data is used only to carry out the commands you give: uploading videos, setting thumbnails, confirming the
+      upload goes to the right channel, and showing video status. It is not used for advertising, analytics,
+      AI model training or any other purpose.</p>
+
+    <h3>Storage</h3>
+    <p>Your Google OAuth token is stored only on your computer, in <code>~/.kantor-yt/token.json</code>, readable
+      only by your computer account. A local upload log (video ID, title, file name, upload time, requested
+      schedule) is kept in <code>~/.kantor-yt/uploads.jsonl</code>. kantor-yt has no server; no data is sent to
+      anyone other than Google/YouTube through their official APIs.</p>
+
+    <h3>Sharing</h3>
+    <p>kantor-yt does not sell, rent or share your data with third parties.</p>
+
+    <h3>Google API Services compliance</h3>
+    <p>kantor-yt's use and transfer of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+      Policy</a>, including the Limited Use requirements.</p>
+
+    <h3>Revoking access and deleting data</h3>
+    <p>Revoke kantor-yt's access at any time on the Google security settings page,
+      <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>,
+      or by running <code>yt logout --revoke</code>. Delete all local data by removing the
+      <code>~/.kantor-yt</code> folder. Uploaded videos live on YouTube and are managed in YouTube Studio.</p>
+
+    <h3>Changes and contact</h3>
+    <p>This policy may be updated; the effective date above will change when it is. Questions:
+      <a href="mailto:memet02nrs@gmail.com">memet02nrs@gmail.com</a></p>
+  </section>
+
+  <footer><a href="index.html">kantor-yt</a> · Top Hot (@Topphott)</footer>
+</main>
+</body>
+</html>
